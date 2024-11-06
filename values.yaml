@@ -99,6 +99,13 @@ upstream:
           - group: 'tekton.dev'
             apiVersion: 'v1beta1'
             plural: 'taskruns'
+      permission:
+        enabled: true
+        rbac:
+          admin:
+            users:
+              - name: user:default/pe1
+              - name: user:default/pe2
     extraEnvVars:
       - name: NODE_OPTIONS
         value: --no-node-snapshot
