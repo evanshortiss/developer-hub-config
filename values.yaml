@@ -27,6 +27,8 @@ global:
         disabled: false
       - package: ./dynamic-plugins/dist/backstage-plugin-techdocs
         disabled: false
+      - package: ./dynamic-plugins/dist/janus-idp-backstage-plugin-rbac
+        disabled: false
 upstream:
   postgresql:
     auth:
