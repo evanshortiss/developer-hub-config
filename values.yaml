@@ -106,6 +106,7 @@ upstream:
             users:
               - name: user:default/pe1
               - name: user:default/pe2
+          policies-csv-file: ./rbac/rbac-policy.csv
     extraEnvVars:
       - name: NODE_OPTIONS
         value: --no-node-snapshot
