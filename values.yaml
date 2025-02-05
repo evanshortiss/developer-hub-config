@@ -117,15 +117,15 @@ upstream:
           #       initialDelay: { seconds: 15 }
           ## --- GITLAB_CATALOG_PROVIDER ---
 
-          ## --- AUTO_DISCOVERY_IMPORT_COMPONENTS ---
-          #   envelop-catalog-entity:
+          # # --- AUTO_DISCOVERY_IMPORT_COMPONENTS ---
+          #   catalog-all-entity:
           #     host: gitlab-gitlab.{{ cluster_subdomain }}
           #     filters:
           #       branch: main
           #     skipForkedRepos: true
-          #     entityFilename: envelope.yaml
-          #     catalogPath: /**/envelope.yaml
-          #     projectPattern: \b(envelope\w*)
+          #     entityFilename: catalog-all.yaml
+          #     catalogPath: /**/catalog-all.yaml
+          #     projectPattern: .*catalog-all$
           #     excludeRepos: []
           #     schedule:
           #       frequency:
@@ -134,7 +134,7 @@ upstream:
           #         seconds: 15
           #       timeout:
           #         minutes: 3
-          # --- AUTO_DISCOVERY_IMPORT_COMPONENTS ---
+          # # --- AUTO_DISCOVERY_IMPORT_COMPONENTS ---
 
           ## --- KEYCLOAK_CATALOG_PROVIDERS ---
           # keycloakOrg:
